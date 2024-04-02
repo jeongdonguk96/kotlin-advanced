@@ -1,4 +1,4 @@
-package io.spring.kotlinadvanced.chapter01_제네릭.lec01_제네릭과_타입_파라미터
+package io.spring.kotlinadvanced.chapter01_제네릭.lec01_03_제네릭과_타입_파라미터
 
 fun main() {
     // case 1
@@ -73,10 +73,12 @@ class Cage2<T>(
         this.animals.add(animal)
     }
 
+    // 사용 지점 변성: 함수에 키워드 명시
     fun moveFrom(cage2: Cage2<out T>) {
         this.animals.addAll(cage2.animals)
     }
 
+    // 사용 지점 변성: 함수에 키워드 명시
     fun moveTo(cage2: Cage2<in T>) {
         cage2.animals.addAll(this.animals)
     }

@@ -1,4 +1,4 @@
-package io.spring.kotlinadvanced.chapter01_제네릭.lec01_제네릭과_타입_파라미터
+package io.spring.kotlinadvanced.chapter01_제네릭.lec01_03_제네릭과_타입_파라미터
 
 abstract class Animal(
     val name: String,
